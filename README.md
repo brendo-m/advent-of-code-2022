@@ -9,5 +9,5 @@ To run:
 nimble run day<x> -s
 
 # run with the real input
-nimble run day<x> -s
+nimble run day<x>
 ```
