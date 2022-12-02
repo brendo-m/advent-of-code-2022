@@ -1,3 +1,6 @@
+import algorithm
+import math
+import sequtils
 import std/parseopt
 import std/strformat
 import strutils
