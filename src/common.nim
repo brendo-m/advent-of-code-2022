@@ -2,6 +2,7 @@ import algorithm
 import math
 import sequtils
 import std/parseopt
+import std/sets
 import std/strformat
 import strutils
 
@@ -19,3 +20,7 @@ proc readNumbers*(filename: string): seq[int] =
     let cleaned = line.strip
     if cleaned.len > 0:
       result.add cleaned.parseInt
+
+template chunk*(it: untyped, n: int): untyped =
+  ## Chunk iterable into groups of `n`.
+  it.distribute(it.len div n)
