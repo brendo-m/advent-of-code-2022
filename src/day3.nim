@@ -1,10 +1,10 @@
 include common
 
-func score(c: char): int = 
+func score(c: char): int =
   if ord(c) >= ord('a') and ord(c) <= ord('z'):
     ord(c) - ord('a') + 1
   else:
-    ord(c) - ord('A') + 27  
+    ord(c) - ord('A') + 27
 
 func repeatedChar(chars: seq[char]): char =
   let mid = len(chars) div 2
@@ -20,11 +20,11 @@ func part1(input: seq[seq[char]]): int =
   input.mapIt(repeatedChar(it)).mapIt(score(it)).sum
 
 func part2(input: seq[seq[char]]): int =
-  input.chunk(3).map(commonChar).mapIt(score(it)).sum
+  input.grouped(3).map(commonChar).mapIt(score(it)).sum
 
 when isMainModule:
-  let input: seq[seq[char]] = 
-    inputFilename(3).lines.toSeq.mapIt(it.toSeq) 
+  let input: seq[seq[char]] =
+    inputFilename(3).lines.toSeq.mapIt(it.toSeq)
 
   echo fmt"Part 1 {part1(input)}"
   echo fmt"Part 2 {part2(input)}"
