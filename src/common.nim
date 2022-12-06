@@ -1,10 +1,4 @@
-import algorithm
-import math
-import sequtils
-import std/parseopt
-import std/sets
-import std/strformat
-import strutils
+import algorithm, math, parseOpt, sequtils, sets, strformat, strutils, tables
 
 # Get the input filename for the given day, sample file if run with -s
 proc inputFilename*(day: int): string =
