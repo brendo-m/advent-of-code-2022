@@ -49,5 +49,5 @@ when isMainModule:
   let spaceToDelete = sizes[^1] - 40_000_000
   let part2 = sizes.filterIt(it >= spaceToDelete).min
 
-  echo fmt"Part 1 {part1}"
-  echo fmt"Part 2 {part2}"
+  echo "Part 1 ", part1
+  echo "Part 2 ", part2

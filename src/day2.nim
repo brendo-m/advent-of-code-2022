@@ -70,6 +70,6 @@ when isMainModule:
   let part1 = games.map(parseGamePart1).map(score).sum
   let part2 = games.map(parseGamePart2).map(score).sum
 
-  echo fmt"Part 1 {part1}"
-  echo fmt"Part 2 {part2}"
+  echo "Part 1 ", part1
+  echo "Part 2 ", part2
   

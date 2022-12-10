@@ -26,5 +26,5 @@ when isMainModule:
   let input: seq[seq[char]] =
     inputFilename(3).lines.toSeq.mapIt(it.toSeq)
 
-  echo fmt"Part 1 {part1(input)}"
-  echo fmt"Part 2 {part2(input)}"
+  echo "Part 1 ", part1(input)
+  echo "Part 2 ", part2(input)

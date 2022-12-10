@@ -29,5 +29,5 @@ when isMainModule:
     .filterIt(overlaps(it[0], it[1]))
     .len
 
-  echo fmt"Part 1 {part1}"
-  echo fmt"Part 2 {part2}"
+  echo "Part 1 ", part1
+  echo "Part 2 ", part2

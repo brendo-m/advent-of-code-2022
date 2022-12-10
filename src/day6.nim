@@ -25,5 +25,5 @@ proc findDistinctWindow(s: string, n: int): int =
 when isMainModule:
   let input = readFile inputFilename(6)
 
-  echo fmt"Part 1 {findDistinctWindow(input, 4)}"
-  echo fmt"Part 2 {findDistinctWindow(input, 14)}"
+  echo "Part 1 ", findDistinctWindow(input, 4)
+  echo "Part 2 ", findDistinctWindow(input, 14)

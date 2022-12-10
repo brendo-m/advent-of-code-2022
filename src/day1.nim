@@ -12,5 +12,5 @@ when isMainModule:
   let part1 = calories[0]
   let part2 = calories[0..2].sum
 
-  echo fmt"Part 1 {part1}"
-  echo fmt"Part 2 {part2}"
+  echo "Part 1 ", part1
+  echo "Part 2 ", part2

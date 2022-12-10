@@ -55,5 +55,5 @@ proc part2(stacks: seq[Stack[char]], instructions: seq[Instruction]): string =
 when isMainModule:
   let (stacks, instructions) = readInput inputFilename(5)
 
-  echo fmt"Part 1 {part1(stacks, instructions)}"
-  echo fmt"Part 2 {part2(stacks, instructions)}"
+  echo "Part 1 ", part1(stacks, instructions)
+  echo "Part 2 ", part2(stacks, instructions)
