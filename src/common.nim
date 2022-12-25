@@ -27,6 +27,10 @@ func grouped*[T](xs: seq[T], n: int): seq[seq[T]] =
   if group.len > 0:
     result.add group
 
+# inverse of anyIt
+template noneIt*(s, body: untyped): untyped =
+  not s.anyIt(body)
+
 # Very basic stack implementation
 type Stack*[T] = seq[T]
 
